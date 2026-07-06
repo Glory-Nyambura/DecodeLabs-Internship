@@ -1,14 +1,12 @@
-🛡️ Project 1: Data Quality & Cleaning Report
+**Internship Assessment Project**
 
-Internship Assessment Project
+🛡️ **Project 1: Data Quality & Cleaning Report**
 
 🎯 Project Overview
-
 This project executes an end-to-end data audit, validation, and cleaning pipeline on an business transactional dataset containing 1,200 records. Raw transactional data often contains formatting conflicts, empty rows, and structural layout vulnerabilities that break live dashboards. The goal of this phase was to eliminate these flaws and establish absolute format uniformity before processing data for analytics.
 
 
 📊 Data Quality Summary
-
 *   Total Rows: 1,200 rows verified. 0 duplicate rows found across structural data keys.
 *   Exact Duplicate Records: 0 redundant database entries detected during global identity checks.
 *   Missing & Null Values: 309 blank rows identified in the `CouponCode` field and successfully resolved.
@@ -16,7 +14,6 @@ This project executes an end-to-end data audit, validation, and cleaning pipelin
 *   Numeric Fields: Enforced whole integers for quantities and currency formats for pricing fields.
 
 Column-Level & Cleanup
-
 *   OrderID: Primary Key validated. Ensured alphanumeric structure contains no blank fields.
 *   Date: Temporal fields standardized to a uniform date notation to fix variance.
 *   CustomerID: System alpha-keys validated against internal database reference indices.
@@ -33,6 +30,23 @@ Column-Level & Cleanup
 
 
 🛠️ Data Skills Demonstrated
-
 * Missing Value Imputation: Resolved 309 blank entries in the coupon column, preserving row records without introducing null data blind spots.
 * Structural Consistency Audits: Deployed range validation rules to confirm that zero data shifting or data loss occurred between the raw source and final sheet.
+
+
+🛡️ **Project 2: Project_2_Data_Analytics**
+
+🎯 Project Overview
+* Processes the clean data layer to surface core business KPIs, product performance, and marketing referral attribution.
+
+📊 Data Quality Summary
+* High-Level Business KPIsUnique Customer Base: 1,189.00 distinct buyers isolated via =COUNTA(UNIQUE(C2:C1201))
+* Total Revenue Pipeline: $1,264,761.96 aggregated via =SUM(O2:O1201)
+* Average Order Value (AOV): $1,053.97 | Median Order Value: $823.62
+* Temporal Coverage: Continuous transaction timeline spanning 2023-01-01 to 2025-06-30
+* Strategic Revenue PerformanceTop Inventory Asset: Chairs generated the highest financial volume, securing $195,620.11 in sales across 562 total units sold.
+* Primary Acquisition Funnel: Instagram serves as the primary marketing funnel, commanding 21.6% of overall orders and generating $275,285.45 in pipeline revenue.
+
+🛠️ Technical Competencies Demonstrated
+* Advanced Functional Modeling: Deployed complex nesting sequences (COUNTA, UNIQUE, TEXT, SUMIF, MEDIAN).
+* Database Pipeline Logic: Applied rigorous extraction, data scrubbing, string normalization, and missing value handling protocols.
